@@ -1,0 +1,108 @@
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.store-locator{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+}
+
+.location-section{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	max-width:300px;
+	margin:15px;
+}
+
+.location-section .location-input{
+	width:100%;
+	border-radius:0px;
+	border:1px solid black;
+	text-align: left;
+}
+
+.location-section .current-location-button{
+	width:100%;
+	border:none;
+	outline:none;
+	padding:5px;
+	text-transform:uppercase;
+}
+
+.store-locator--map{
+	min-height:600px;
+	height:100%;
+	width:100%;
+}
+
+.location-section label{
+	text-align: left;
+	width: 100%;
+}
+
+.search-button{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.location-search-section{
+	position:relative;
+	width:100%;
+}
+
+.location-search-section .location-search-button {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	background:transparent;
+	border:none;
+	color:grey;
+}
+
+.stores-list{
+	list-style-type:none;
+	padding-left: 0px !important;
+	text-align: center;
+}
+
+.stores-list li:not(:last-of-type) {
+	border-bottom:1px solid lightgrey;
+}
+
+.pagination{
+	display:flex;
+	flex-direction: row;
+	justify-content:center;}
+
+.pagination li a{
+	color:#000000;
+	text-decoration: none;
+	padding:5px;
+
+}
+
+.pagination li.active a{
+	font-weight: bold;
+}
+
+.loading-indicator{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	display:none;
+}
