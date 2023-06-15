@@ -1,0 +1,117 @@
+<?php 
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+
+	acf_add_local_field_group( array(
+		'key' => 'group_648b0b5ba13a1',
+		'title' => 'Store Locator Settings',
+		'fields' => array(
+			array(
+				'key' => 'field_648b0b5b50ccf',
+				'label' => 'Google Maps API Key',
+				'name' => 'google_maps_api_key',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'maxlength' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_648b0b7650cd0',
+				'label' => 'Default Latitude',
+				'name' => 'default_latitude',
+				'aria-label' => '',
+				'type' => 'number',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'min' => '',
+				'max' => '',
+				'placeholder' => '',
+				'step' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_648b0b8450cd1',
+				'label' => 'Default Longitude',
+				'name' => 'default_longitude',
+				'aria-label' => '',
+				'type' => 'number',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'min' => '',
+				'max' => '',
+				'placeholder' => '',
+				'step' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+				'key' => 'field_648b0b9250cd2',
+				'label' => 'Default Zoom',
+				'name' => 'default_zoom',
+				'aria-label' => '',
+				'type' => 'range',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 12,
+				'min' => 0,
+				'max' => 21,
+				'step' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'options_page',
+					'operator' => '==',
+					'value' => 'acf-options-settings',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	) );
+} );
+
